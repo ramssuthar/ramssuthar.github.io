@@ -11,21 +11,19 @@ body {
 }
 .header{
     position: relative;
-    height:95vh;
+    height:55vh;
     background-image: linear-gradient(
     to right bottom, 
     /*rgba(73,155,234,0.8), rgba(32,124,229,0.9)*/rgba(22,22,22,0.9), 
     rgba(30,30,30,0.9));
-
     background-position:center;
     background-size:cover;
-    clip-path:polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%) ;
 
 }
 .logo-box{
     position:absolute ;
     transform:translate(-50%,-50%);
-    top:25%;
+    top:32%;
     left:50%;
     
 }
@@ -38,7 +36,7 @@ body {
 .main-heading{
     position:absolute;
     transform:translate(-50%,-50%);
-    top:40%;
+    top:68%;
     left:50%;
     color:white;
     text-transform:uppercase;
