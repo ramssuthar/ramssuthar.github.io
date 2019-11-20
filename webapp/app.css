@@ -1,0 +1,138 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    font-size:14px;
+    font-weight:400;
+    padding:10px;
+    
+}
+.header{
+    height:95vh;
+    background-image: linear-gradient(
+    to right bottom, 
+    /*rgba(73,155,234,0.8), rgba(32,124,229,0.9)*/rgba(22,22,22,0.9), 
+    rgba(30,30,30,0.9));
+
+    background-position:center;
+    background-size:cover;
+    clip-path:polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%) ;
+
+}
+.logo-box{
+    position:absolute ;
+    top:30px;
+    left:30px;
+    
+}
+.logo{
+    border-radius: 50%;
+    height:60px;
+    width:60px;
+    
+}
+.main-heading{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:40%;
+    left:50%;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    font-family:Lato;
+    backface-visibility:hidden;
+}
+.main-heading-main{
+    display:block;
+    letter-spacing:10px;
+    animation:MoveToRight 1s ease-out;
+}
+.main-heading-sub{
+    display:block;
+    letter-spacing:10px;
+    font-size:17px;
+    animation:MoveToLeft 1s ease-out;
+    margin-bottom:15px;
+}
+@keyframes MoveToRight{
+0%{
+    opacity:0;
+    transform:translateX(100px);
+}
+80%{
+    transform:translateX(-20px);
+}
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+@keyframes MoveToLeft{
+0%{
+    opacity:0;
+    transform:translateX(-100px);
+}
+80%{
+    transform:translateX(20px);
+}
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+.btn:link,
+.btn:visited{
+position:absolute;
+    display:inline-block ;
+    text-decoration:none;
+    font-size:10px;
+    padding:10px 20px;
+    border-radius:15px;
+    animation:MoveToTop .5s ease-in;
+    position:relative;
+    transition:all .2s;
+}
+.btn:hover{
+transform:translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.btn:active{
+    transform:translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    
+}
+.btn-white{
+    color:rgb(42, 42, 43);
+    background-color:white;
+}
+@keyframes MoveToTop{
+0%{
+    opacity:0;
+    transform:translateY( 30px);
+}
+    100%{
+        opacity:1;
+        transform:translateY( 0);
+    }
+}
+.btn-white::after{
+    background-color:white;
+}
+.btn::after{
+    content:"";
+    position:absolute ;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    border-radius:100px;
+    transition:all .2s;
+}
+.btn:hover::after{
+
+    transform:scale(2.5);
+    opacity:0;
+}
