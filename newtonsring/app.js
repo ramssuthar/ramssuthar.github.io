@@ -1,30 +1,33 @@
 var ring = [4,6,8,10,12,14,16,18]; 
 
-// var str1 = prompt('Do Enter Values of MSR of Right Side')
-// var str2 = prompt('Enter Values of CD of Right Side')
-// var str3 = prompt('Enter Values of MSR of Left Side')
-// var str4 = prompt('Enter Values of CD of Left Side')
+function userInput(){
 
-// var arrStr1 = str1.split(',');
-// var arrStr2 = str2.split(',');
-// var arrStr3 = str3.split(',');
-// var arrStr4 = str4.split(',');
+    var str1 = document.getElementById('in-1').value;
+    var str2 = document.getElementById('in-2').value;
+    var str3 = document.getElementById('in-3').value;
+    var str4 = document.getElementById('in-4').value;
+    
+    var arrStr1 = str1.split(',');
+    var arrStr2 = str2.split(',');
+    var arrStr3 = str3.split(',');
+    var arrStr4 = str4.split(',');
+    
+    var rightMsr = arrStr1.map(el => parseFloat(el, 10))
+    var cdR = arrStr2.map(el => parseFloat(el, 10))
+    var leftMsr = arrStr3.map(el => parseFloat(el, 10))
+    var cdL = arrStr4.map(el => parseFloat(el, 10))
 
-// var rightMsr = arrStr1.map(el => parseFloat(el, 10))
-// var cdR = arrStr2.map(el => parseFloat(el, 10))
-// var leftMsr = arrStr3.map(el => parseFloat(el, 10))
-// var cdL = arrStr4.map(el => parseFloat(el, 10))
 
-var rightMsr = [4.1,4.1,4.1,4.0,4.0,4.0,4.0,4.0]; //[4.1,4.1,4.1,4.0,4.0,4.0,4.0,4.0];
-var cdR = [53,34,15,96,77,58,39,20]; //[39,20,01,82,63,44,25,06]
+// var rightMsr = [4.1,4.1,4.1,4.0,4.0,4.0,4.0,4.0]; //[4.1,4.1,4.1,4.0,4.0,4.0,4.0,4.0];
+// var cdR = [53,34,15,96,77,58,39,20]; //[39,20,01,82,63,44,25,06]
 
-var leftMsr = [4.6,4.6,4.6,4.6,4.6,4.7,4.7,4.7]; //[4.7,4.7,4.7,4.7,4.7,4.8,4.8,4.8];
-var cdL = [23,42,61,80,99,18,37,56]; //[23,42,61,80,99,18,37,56] [13,32,51,70,89,08,27,46]
+// var leftMsr = [4.6,4.6,4.6,4.6,4.6,4.7,4.7,4.7]; //[4.7,4.7,4.7,4.7,4.7,4.8,4.8,4.8];
+// var cdL = [23,42,61,80,99,18,37,56]; //[23,42,61,80,99,18,37,56] [13,32,51,70,89,08,27,46]
 
-console.log('MSR on Right Side ( From DOWN to UP ) = '+ rightMsr);
-console.log('CD on Right Side ( From down to UP ) = '+ cdR);
-console.log('MSR on Left Side ( From down to UP ) = '+ leftMsr);
-console.log('CD on Left Side ( From down to UP ) = '+ cdL);
+// console.log('MSR on Right Side ( From DOWN to UP ) = '+ rightMsr);
+// console.log('CD on Right Side ( From down to UP ) = '+ cdR);
+// console.log('MSR on Left Side ( From down to UP ) = '+ leftMsr);
+// console.log('CD on Left Side ( From down to UP ) = '+ cdL);
 
 function arrayCalc(arr1,arr2,fn){
     var tR = [];
@@ -111,3 +114,5 @@ function printData(ring,msr_r,cd_r,tr_r,msr_l,cd_l,tr_l,diameter,diameter_s,arrD
         document.querySelector('#meanDnp-Dn').textContent = meanDnp_Dn;
     }
 printData(ring,rightMsr,cdR,tRRight,leftMsr,cdL,tRLeft,diameter,dsqr,arrDnp_Dn,meanDnp_Dn);
+
+}
