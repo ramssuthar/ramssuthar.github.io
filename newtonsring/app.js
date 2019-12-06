@@ -112,6 +112,9 @@ function printData(ring,msr_r,cd_r,tr_r,msr_l,cd_l,tr_l,diameter,diameter_s,arrD
             }
         } 
         document.querySelector('#meanDnp-Dn').textContent = meanDnp_Dn;
+        document.querySelector('#meanDnp-Dn1').textContent = "Average of [ D^2(n+p) - D^2(n) ] = "+meanDnp_Dn;
+        document.querySelector('#wavelength').textContent = "The Wavelength of Sodium Light is = "+resultLambdaTh +" Å";
+        document.querySelector('#error').textContent = "The Percentage Error is = "+percentageError +"%";
     }
 printData(ring,rightMsr,cdR,tRRight,leftMsr,cdL,tRLeft,diameter,dsqr,arrDnp_Dn,meanDnp_Dn);
 
