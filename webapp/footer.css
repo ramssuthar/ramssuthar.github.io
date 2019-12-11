@@ -17,13 +17,19 @@ position: fixed;
 }
 .social-links,.contact-links,.address-links{
     padding: 10px;
-    margin: 20px;
-    background-color: rgb(34, 34, 34);
+    margin-left: 20px;
+    margin-right: 20px ;
+    /*background-color: rgb(34, 34, 34);*/
     width: 300px;
 }
 .social-links-container,.contact-links-container{
     margin-top:10px ;
     display: flex;
+}
+.address-links-container{
+    margin-top: 10px;
+    font-family:Josefin Sans;
+    font-size: 10px;
 }
 .fa{
     position: absolute;
