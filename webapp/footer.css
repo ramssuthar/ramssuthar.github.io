@@ -17,10 +17,10 @@ position: fixed;
 }
 .social-links,.contact-links,.address-links{
     padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px ;
-    /*background-color: rgb(34, 34, 34);*/
-    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px ;
+    background-color: rgb(34, 34, 34);
+    width: 400px;
 }
 .social-links-container,.contact-links-container{
     margin-top:10px ;
