@@ -6,15 +6,16 @@
 body {
     font-size:14px;
     font-weight:400;
-    
+    background-color: rgb(32, 32, 32);
 }
 .header{
     position: relative;
     height:20rem;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
     to right bottom, 
-    /*rgba(30,30,30,0.9), rgba(22,22,22,0.9)*/rgba(32, 32, 32, 0.7), 
-    rgba(32, 32, 32, 0.7)),url(./data/bg-poly.jpg);
+    rgba(32, 32, 32, 0.7), 
+    rgba(32, 32, 32, 0.7)); */
+    background-color: rgb(32, 32, 32);
     background-position:center;
     background-size:cover;
 
