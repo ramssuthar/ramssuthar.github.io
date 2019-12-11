@@ -5,7 +5,7 @@ position: fixed;
   width: 100%;
   background-color: rgb(32, 32, 32);
   color: white;
-  font-family:Josefin Sans;
+  font-family:Lato;
   font-weight: normal;
   padding: 20px;
   letter-spacing: 3px;
@@ -28,8 +28,8 @@ position: fixed;
 }
 .address-links-container{
     margin-top: 10px;
-    font-family:Josefin Sans;
-    font-size: 10px;
+    font-family:Lato;
+    font-size: 12px;
 }
 .fa{
     position: absolute;
@@ -43,15 +43,18 @@ position: fixed;
     border-radius:50%;
     margin-right: 10px;
     background-color:white;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-top:5px;
 }
 
 .btn-social:hover{
+    position: relative;
     border: none;
     border-radius:50%;
+    margin-right: 10px;
     background-color:rgb(32, 32, 32);
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top:5px;
 }
