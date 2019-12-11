@@ -30,8 +30,9 @@ position: fixed;
     margin-top: 10px;
     font-family:Lato;
     font-size: 12px;
+    letter-spacing: 1px;
 }
-.fa{
+.fa-align{
     position: absolute;
     transform: translate(-50%,-50%);
     left: 55%;
@@ -57,4 +58,11 @@ position: fixed;
     width: 30px;
     height: 30px;
     margin-top:5px;
+}
+.final{
+    display: flex;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    justify-content: center;
 }
