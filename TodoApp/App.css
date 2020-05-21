@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(120deg, #f6d365, #fda085);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+header{
+  font-size: 1.5rem;
+}
+header,form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input, form button{
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  outline: none;
+}
+form button{
+  background: white;
+  color:#d88771;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover{
+  background:#d88771 ;
+  color:white;
+}
+
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list{
+  min-width: 30%;
+  list-style: none;
+}
+.todo {
+  color: black;
+  margin: 0.5rem;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.todo li{
+  flex: 1;
+}
+.todo-item{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.completed-button, .trash-button{
+  background: #ff6f47;
+  color: white;
+  border:none;
+  padding: 1rem;
+outline: none;
+cursor: pointer;
+font-size: 1rem;
+}
+.completed-button{
+  background: #5cd65c;
+}
+.ion-android-done, .ion-android-close{
+  pointer-events: none;
+}
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall{
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+label{
+  background: #1f1f2e;
+  padding: 5px;
+}
+.select{
+  color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.filter-todo{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  outline: none;
+  border:none;
+  color: #1f1f2e;
+  padding-left:20px;
+  padding: 10px;
+}
+.select::after{
+  content: "\25BC";
+  background: white;
+  padding: 5px;
+  color: #1f1f2e;
+}
