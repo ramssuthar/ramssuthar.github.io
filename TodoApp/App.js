@@ -8,6 +8,7 @@ todoButton.addEventListener("click", addTodo)
 todoList.addEventListener("click", deleteCheck)
 filterOption.addEventListener("click",filterTodo)
 // Functions------------------------------------------------
+// Functions------------------------------------------------
 function addTodo(event) {
 //prevent form from submiting
 event.preventDefault();
@@ -25,13 +26,13 @@ newTodo.innerText = todoInput.value;
 
 //Check Button
 const completedButton = document.createElement('button');
-completedButton.innerHTML = '<i class="ion ion-android-done"></i>' ;
+completedButton.innerHTML = '<i class="fa fa-check"></i>' ;
 completedButton.classList.add('completed-button');
 todoDiv.appendChild(completedButton);
 
 //Delete Button
 const trashButton = document.createElement('button');
-trashButton.innerHTML = '<i class="ion ion-android-close"></i>' ;
+trashButton.innerHTML = '<i class="fa fa-times"></i>' ;
 trashButton.classList.add('trash-button');
 todoDiv.appendChild(trashButton);
 
@@ -39,7 +40,6 @@ todoDiv.appendChild(trashButton);
 todoInput.value = "";
 }
 
-//Deleting Items and checkItem
 function deleteCheck(event) {
 const item = event.target;
   if(item.classList[0] === "trash-button"){
